@@ -24,8 +24,8 @@ enableRobotsTXT = true
   # Ideal usecase for this is to import custom js/css or add your analytics snippet
   customHeadHTML = ""
 
-  # Keywords relevant for SEO
   metaKeywords = ["blog", "gokarna", "hugo"]
+  showPostsOnHomePage = ""
 
   # Footer text
   footer = ""
