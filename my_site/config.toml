@@ -29,7 +29,7 @@ enableRobotsTXT = true
   # Footer text
   footer = ""
   socialIcons = [
-    {name = "linkedin", url = "www.linkedin.com/in/lily-koffman"},
+    {name = "linkedin", url = "https:://linkedin.com/in/lily-koffman"},
     {name = "github", url = "https://github.com/lilykoff"},
     {name = "email", url = "mailto:lkoffma2@jh.edu"},
     {name = "googlescholar", url = "https://scholar.google.com/citations?user=lOh2k5YAAAAJ&hl=en"},
@@ -64,7 +64,14 @@ enableRobotsTXT = true
     weight = 4
 
   [[menu.main]]
+    name = "Posters"
+    pre = "<span data-feather='image'></span>"
+    url = "/posters/"
+    weight = 5
+
+  [[menu.main]]
     name = "Posts"
     pre = "<span data-feather='edit-2'></span>"
     url = "/posts/"
-    weight = 5
+    weight = 6
+    #https://feathericons.com/
