@@ -1,4 +1,4 @@
-[submodule "lilykoff_site/themes/congo"]
-	path = lilykoff_site/themes/congo
-	url = https://github.com/jpanther/congo.git
+[submodule "my_site/themes/gokarna"]
+	path = my_site/themes/gokarna
+	url = https://github.com/526avijitgupta/gokarna.git
 	branch = stable
