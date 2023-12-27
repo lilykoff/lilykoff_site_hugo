@@ -1,0 +1,86 @@
+baseURL = "http://example.org/"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+title = "Lily Koffman"
+theme = "gokarna"
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+[params]
+  avatarURL = "/images/headshot_new.jpeg"
+  avatarSize = "size-xl"
+
+  # Description to display on homepage
+  description = "Biostatistics PhD candidate & endurance sports enthusiast"
+
+  # Accent color is displayed when you hover over <a> tags
+  accentColor = "#FF4D4D"
+
+  # Display "back to top" button on posts
+  ShowBackToTopButton = true
+
+  # You can use this to inject any HTML in the <head> tag.
+  # Ideal usecase for this is to import custom js/css or add your analytics snippet
+  customHeadHTML = ""
+
+  # Keywords relevant for SEO
+  metaKeywords = ["blog", "gokarna", "hugo"]
+
+  # If you want to display posts on the homepage, the options are
+  # "popular" (order posts by weight), "recent" (order posts by date)
+  # or "" (do not display, default option)
+  showPostsOnHomePage = ""
+
+  # Footer text
+  footer = ""
+  socialIcons = [
+    {name = "linkedin", url = "www.linkedin.com/in/lily-koffman"},
+    {name = "github", url = "https://github.com/lilykoff"},
+    {name = "email", url = "mailto:lkoffma2@jh.edu"},
+    {name = "googlescholar", url = "https://scholar.google.com/citations?user=lOh2k5YAAAAJ&hl=en"},
+    {name = "orcid", url = "https://orcid.org/0000-0003-1543-2896"},
+    {name = "researchgate", url = "https://www.researchgate.net/profile/Lily-Koffman"},
+    {name = "strava", url = "https://www.strava.com/athletes/27249108"}
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    pre = "<span data-feather='user'></span>"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Publications"
+    pre = "<span data-feather='paperclip'></span>"
+    url = "/pubs/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Projects"
+    pre = "<span data-feather='codesandbox'></span>"
+    url = "/projects/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='edit-2'></span>"
+    url = "/posts/"
+    weight = 5
+ # [[menu.main]]
+ #   identifier = "buymeacoffee"
+ #   pre = "<span data-feather='coffee'></span>"
+ #   url = "https://www.buymeacoffee.com/avijitgupta"
+ #   weight = 5
+    # We use feather-icons: https://feathericons.com/
+    # pre = "<span data-feather='github'></span>"
+
+    # We use feather-icons: https://feathericons.com/
+    # pre = "<span data-feather='github'></span>"
