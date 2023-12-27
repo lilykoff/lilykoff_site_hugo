@@ -25,7 +25,6 @@ enableRobotsTXT = true
   customHeadHTML = ""
 
   metaKeywords = ["blog", "gokarna", "hugo"]
-  showPostsOnHomePage = ""
 
   # Footer text
   footer = ""
