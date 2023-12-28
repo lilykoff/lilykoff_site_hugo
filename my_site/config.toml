@@ -76,3 +76,4 @@ enableRobotsTXT = true
    # url = "/posts/"
    # weight = 6
     #https://feathericons.com/
+    #export PATH=$PATH:/usr/local/go/bin
