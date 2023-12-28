@@ -29,7 +29,7 @@ enableRobotsTXT = true
   # Footer text
   footer = ""
   socialIcons = [
-    {name = "linkedin", url = "https:://linkedin.com/in/lily-koffman"},
+    {name = "linkedin", url = "https://linkedin.com/in/lily-koffman"},
     {name = "github", url = "https://github.com/lilykoff"},
     {name = "email", url = "mailto:lkoffma2@jh.edu"},
     {name = "googlescholar", url = "https://scholar.google.com/citations?user=lOh2k5YAAAAJ&hl=en"},
