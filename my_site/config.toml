@@ -72,7 +72,7 @@ enableRobotsTXT = true
   
   [[menu.main]]
     name = "Talks"
-    pre = "<span data-feather='message-cirle'></span>"
+    pre = "<span data-feather='messagecircle'></span>"
     url = "/talks/"
     weight = 6
 
