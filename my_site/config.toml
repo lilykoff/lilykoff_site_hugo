@@ -64,17 +64,17 @@ enableRobotsTXT = true
     url = "/projects/"
     weight = 4
 
-  [[menu.main]]
-    name = "Posters"
-    pre = "<span data-feather='image'></span>"
-    url = "/posters/"
-    weight = 5
+#  [[menu.main]]
+#    name = "Posters"
+#    pre = "<span data-feather='image'></span>"
+#    url = "/posters/"
+#    weight = 5
   
   [[menu.main]]
     name = "Talks"
     pre = "<span data-feather='message-circle'></span>"
     url = "/talks/"
-    weight = 6
+    weight = 5
 
  # [[menu.main]]
   #  name = "Posts"
