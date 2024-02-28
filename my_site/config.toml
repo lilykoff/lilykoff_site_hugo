@@ -69,6 +69,12 @@ enableRobotsTXT = true
     pre = "<span data-feather='image'></span>"
     url = "/posters/"
     weight = 5
+  
+  [[menu.main]]
+    name = "Talks"
+    pre = "<span data-feather='messag-cirle'></span>"
+    url = "/talks/"
+    weight = 6
 
  # [[menu.main]]
   #  name = "Posts"
