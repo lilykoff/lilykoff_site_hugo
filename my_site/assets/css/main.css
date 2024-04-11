@@ -496,7 +496,7 @@ table td {
    *  causing the line to wrap with the longest possible date string
    *  "September 22, 2022"
    */
-  width: 73%;
+  width: 99%;
 }
 .tags-list .post-tags {
   margin-top: 50px;
