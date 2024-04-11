@@ -10,12 +10,10 @@ theme = "gokarna"
   [contentFormats.html]
     mediaType = "text/html"
     isPlainText = false
-    
-[markup]
-  defaultMarkdownHandler = "goldmark"
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
 
 # Automatically generate robots.txt
 enableRobotsTXT = true
