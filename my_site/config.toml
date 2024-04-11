@@ -2,9 +2,16 @@ baseURL = "http://lilykoff.com/"
 defaultContentLanguage = "en"
 languageCode = "en"
 
+
 title = "Lily Koffman"
 theme = "gokarna"
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
 # Automatically generate robots.txt
 enableRobotsTXT = true
 [params]
@@ -26,6 +33,7 @@ enableRobotsTXT = true
 
   metaKeywords = ["blog", "gokarna", "hugo"]
 
+  
   # Footer text
   footer = ""
   socialIcons = [
