@@ -76,10 +76,10 @@ enableRobotsTXT = true
     url = "/talks/"
     weight = 6
 
- # [[menu.main]]
-  #  name = "Posts"
-   # pre = "<span data-feather='edit-2'></span>"
-   # url = "/posts/"
-   # weight = 6
+ [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='edit-2'></span>"
+    url = "/posts/"
+    weight = 7
     #https://feathericons.com/
     #export PATH=$PATH:/usr/local/go/bin
