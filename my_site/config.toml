@@ -6,12 +6,17 @@ languageCode = "en"
 title = "Lily Koffman"
 theme = "gokarna"
 
+[contentFormats]
+  [contentFormats.html]
+    mediaType = "text/html"
+    isPlainText = false
+    
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-      
+
 # Automatically generate robots.txt
 enableRobotsTXT = true
 [params]
