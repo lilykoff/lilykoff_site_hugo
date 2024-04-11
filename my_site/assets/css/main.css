@@ -423,14 +423,14 @@ table td {
 
 .markdown-content {
   line-height: 1.25;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .home-posts {
   margin: 0 auto;
   padding-top: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 /* SINGLE */
