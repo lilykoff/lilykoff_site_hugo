@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lily Koffman</title>
+    <link>http://lilykoff.com/</link>
+    <description>Recent content on Lily Koffman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 11 Apr 2024 17:55:28 +0800</lastBuildDate><atom:link href="http://lilykoff.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NHANES Weartime Vignette</title>
+      <link>http://lilykoff.com/posts/nhanes_wt/</link>
+      <pubDate>Thu, 11 Apr 2024 17:55:28 +0800</pubDate>
+      
+      <guid>http://lilykoff.com/posts/nhanes_wt/</guid>
+      <description>NHANES 2011-2014 Weartime Vignette Table of contents Background Weartime in NHANES 2011-2014 Distributions of wake, sleep, nonwear, unkown Wake, sleep, unknown &amp;gt;22 Hours of Sleep &amp;gt;22 Hours of Wake Large amounts of unknown Patterns of wake, sleep wear by age Final criteria NHANES 2011-2014 Weartime Vignette CodeShow All CodeHide All CodeView Source Background When analyzing accelerometry data collected in free living settings, weartime estimation is a crucial first step. If an individual isn’t actually wearing her device, we don’t want to estimate her physical activity as zero!</description>
+    </item>
+    
+    <item>
+      <title>Pubs</title>
+      <link>http://lilykoff.com/pubs/</link>
+      <pubDate>Wed, 27 Dec 2023 14:13:06 -0500</pubDate>
+      
+      <guid>http://lilykoff.com/pubs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>http://lilykoff.com/talks/</link>
+      <pubDate>Wed, 27 Dec 2023 14:13:06 -0500</pubDate>
+      
+      <guid>http://lilykoff.com/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://lilykoff.com/about/</link>
+      <pubDate>Wed, 27 Dec 2023 14:10:04 -0500</pubDate>
+      
+      <guid>http://lilykoff.com/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://lilykoff.com/posters/</link>
+      <pubDate>Wed, 27 Dec 2023 14:10:04 -0500</pubDate>
+      
+      <guid>http://lilykoff.com/posters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://lilykoff.com/projects/</link>
+      <pubDate>Wed, 27 Dec 2023 14:10:04 -0500</pubDate>
+      
+      <guid>http://lilykoff.com/projects/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
