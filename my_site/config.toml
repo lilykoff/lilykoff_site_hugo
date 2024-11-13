@@ -60,7 +60,7 @@ enableRobotsTXT = true
   [[menu.main]]
     name = "About"
     pre = "<span data-feather='user'></span>"
-    url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
+    url = "/about/"
     weight = 2
 
   [[menu.main]]
