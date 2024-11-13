@@ -89,6 +89,7 @@ enableRobotsTXT = true
 
   [[menu.main]]
     name = "CV"
+    pre = "<span data-feather='external-link'></span>"
     url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
     weight = 7
 
