@@ -3,21 +3,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 
 <style>
+  :root {
+    --dark-primary-color: 34, 39, 46;
+    --dark-secondary-color: #2d333b;
+    --dark-tertiary-color: #646464;
+    --dark-text-color: white;
+  }
+  
   body {
-    background-color: #ffffff; /* Restore original background color */
+    background-color: rgb(var(--dark-primary-color));
+    color: var(--dark-text-color);
   }
   .card {
-    background-color: #f8f9fa; /* Ensure cards stand out with light gray background */
-    border: 1px solid #dee2e6;
+    background-color: var(--dark-secondary-color);
+    border: 1px solid var(--dark-tertiary-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .btn-primary {
-    background-color: #007bff; /* Restore original button color */
-    border-color: #007bff;
+    background-color: var(--dark-tertiary-color);
+    border-color: var(--dark-tertiary-color);
+    color: var(--dark-text-color);
   }
   .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
+    background-color: white;
+    border-color: white;
+    color: rgb(var(--dark-primary-color));
   }
 </style>
 
