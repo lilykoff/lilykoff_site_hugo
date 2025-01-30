@@ -1,32 +1,72 @@
 {{ define "main" }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container-fluid">
-  <div class=row>
-    <h2>Open-source, minute-level step counts from NHANES</h2>
-    <p><a href=https://doi.org/10.13026/ah0j-3z47 target=_blank>PhysioNet repository with minute-level step counts from five different algorithms in NHANES 2011-2014</a></p>
-    </p>
-  
-    <h2>US Ski and Snowboard Press Release</h2>
-    <p><a href=https://usskiandsnowboard.org/news/woman-behind-numbers-how-lily-koffman-helps-mold-better-athletes-through-science target=_blank>The Woman Behind the Numbers: How Lily Koffman Helps Mold Better Athletes Through Science</a></p>
-    </p>
-    <p><img src="https://usskiandsnowboard.org/sites/default/files/images/news-articles/hero-image/2020-09/DSC08340.jpg" class="card-image" width="400" height="225"/></p>
- 
-    <h2>Equal Distance Ski Racing Analysis</h2>
-    <p><a href=https://fasterskier.com/2021/05/a-new-push-for-equal-distance-racing/ target=_blank>FasterSkier: A New Push for Equal Distance Racing</a></p>
-    </p>
-    <p><img src="https://fasterskier.com/wp-content/blogs.dir/1/files/2021/05/Skate.jpeg" class="card-image" width="400" height="225"/></p>
-  
-    <h2>Comcast Sports Tech Webinar Panelist</h2>
+<!-- Ensure the correct stylesheets are included -->
+<link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+<link rel="stylesheet" type="text/css" href="/css/main.min.css">
+<link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
-    <p><a href=https://www.comcastsportstech.com/event/livin-on-the-edge-u-s-ski-snowboards-competitive-edge-via-analytics/ target=_blank>Livin’ On the Edge: U.S. Ski &amp; Snowboard’s Competitive Edge via Analytics</a></p>
-    <iframe width="400" height="225" src="https://www.youtube.com/embed/gKojeBd-4JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+<!-- Ensure JavaScript handles theme switching -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const darkTheme = document.getElementById("dark-theme");
+    if (localStorage.getItem("theme") === "light") {
+      darkTheme.disabled = true;
+    }
+  });
+</script>
 
-    <h2>Undergraduate Thesis</h2>
-    <p><a href=https://drive.google.com/drive/folders/1HjrZKbM9zdiVKNp-lcb3jFxn5D2arp0S target=_blank>Modeling Cycling Performance Using Observational GPX Data</a></p>
-    </p>
-    <p><img src="../images/thesis.png" class="card-image" width="400" height="225"/></p>
-  </div>  
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col d-flex">
+      <div class="card flex-fill shadow border rounded text-center p-3">
+        <h3 class="card-title">Open-source, Minute-level Step Counts from NHANES</h3>
+        <a href="https://doi.org/10.13026/ah0j-3z47" target="_blank" class="btn">View PhysioNet Repository</a>
+      </div>
+    </div>
+    
+    <div class="col d-flex">
+      <div class="card flex-fill shadow border rounded text-center p-3">
+        <h3 class="card-title">US Ski and Snowboard Press Release</h3>
+        <p>
+          <a href="https://usskiandsnowboard.org/news/woman-behind-numbers-how-lily-koffman-helps-mold-better-athletes-through-science" target="_blank">The Woman Behind the Numbers</a>
+        </p>
+        <img src="https://usskiandsnowboard.org/sites/default/files/images/news-articles/hero-image/2020-09/DSC08340.jpg" class="img-fluid rounded" alt="US Ski and Snowboard">
+      </div>
+    </div>
+
+    <div class="col d-flex">
+      <div class="card flex-fill shadow border rounded text-center p-3">
+        <h3 class="card-title">Equal Distance Ski Racing Analysis</h3>
+        <p>
+          <a href="https://fasterskier.com/2021/05/a-new-push-for-equal-distance-racing/" target="_blank">FasterSkier: A New Push for Equal Distance Racing</a>
+        </p>
+        <img src="https://fasterskier.com/wp-content/blogs.dir/1/files/2021/05/Skate.jpeg" class="img-fluid rounded" alt="Equal Distance Ski Racing">
+      </div>
+    </div>
+
+    <div class="col d-flex">
+      <div class="card flex-fill shadow border rounded text-center p-3">
+        <h3 class="card-title">Comcast Sports Tech Webinar Panelist</h3>
+        <p>
+          <a href="https://www.comcastsportstech.com/event/livin-on-the-edge-u-s-ski-snowboards-competitive-edge-via-analytics/" target="_blank">Livin’ On the Edge: U.S. Ski &amp; Snowboard’s Competitive Edge via Analytics</a>
+        </p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/gKojeBd-4JI" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex">
+      <div class="card flex-fill shadow border rounded text-center p-3">
+        <h3 class="card-title">Undergraduate Thesis</h3>
+        <p>
+          <a href="https://drive.google.com/drive/folders/1HjrZKbM9zdiVKNp-lcb3jFxn5D2arp0S" target="_blank">Modeling Cycling Performance Using Observational GPX Data</a>
+        </p>
+        <img src="../images/thesis.png" class="img-fluid rounded" alt="Undergraduate Thesis">
+      </div>
+    </div>
+  </div>
 </div>
+
 {{ end }}
