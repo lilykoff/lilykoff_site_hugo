@@ -303,7 +303,7 @@ a:hover .feather-sun {
 /* CODE BLOCKS */
 code,
 pre {
-  background-color: var(--light-tertiary-color);
+  background-color: var(--light-tertiary-color) !important;
   box-sizing: border-box;
   color: white;
 }
@@ -343,14 +343,14 @@ code {
 }
 
 blockquote {
-  border-left: 2px solid var(--light-secondary-color);
-  color: grey;
+  border-left: 2px solid var(--light-secondary-color) !important;
+  color: grey !important;;
   padding-left: 1rem;
   margin-left: 0;
 }
 
 hr {
-  color: var(--light-secondary-color);
+  color: var(--light-secondary-color) !important;
   margin: 50px auto;
 }
 
@@ -363,7 +363,7 @@ table {
 }
 
 table thead {
-  background-color: var(--light-secondary-color);
+  background-color: var(--light-secondary-color) !important;
 }
 
 table td,
@@ -372,7 +372,7 @@ table th {
 }
 
 table td {
-  border-bottom: 1px solid var(--light-secondary-color);
+  border-bottom: 1px solid var(--light-secondary-color) !important;
 }
 
 /* HOME PAGE */
@@ -430,7 +430,7 @@ table td {
 .social-icons-list .social-icon {
   box-sizing: border-box;
   display: inline-block;
-  fill: var(--light-text-color);
+  fill: var(--light-text-color) !important;
   height: 24px;
   margin: 0 6px;
   width: 24px;
@@ -462,7 +462,7 @@ table td {
   overflow-wrap: break-word;
 }
 .post .post-date, .prev-post-date, .next-post-date {
-  color: gray;
+  color: gray !important;
 }
 .post .post-content {
   line-height: 1.7;
@@ -535,7 +535,7 @@ table td {
   padding: 5px 8px;
 }
 .tags-list .post-tags .post-tag a .tag-posts-count {
-  background-color: var(--light-secondary-color);
+  background-color: var(--light-secondary-color) !important;
   border-radius: inherit;
   color: inherit;
   opacity: 0.8;
@@ -544,7 +544,7 @@ table td {
   z-index: 0;
 }
 .tags-list .post-tags .post-tag:hover a .tag-posts-count {
-  background-color: var(--light-text-color);
+  background-color: var(--light-text-color) !important;
   color: rgb(var(--light-primary-color));
 }
 
@@ -611,7 +611,7 @@ table td {
   }
 
   .list-posts .post-date {
-    color: gray;
+    color: gray !important;
   }
 
   .footer {
