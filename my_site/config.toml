@@ -93,10 +93,10 @@ enableRobotsTXT = true
     url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
     weight = 7
 
- #[[menu.main]]
-    #name = "Posts"
-   # pre = "<span data-feather='edit-2'></span>"
-    #url = "/posts/"
-    #weight = 7
+ [[menu.main]]
+    name = "Vignettes"
+    pre = "<span data-feather='file-text'></span>"
+    url = "/vign/"
+    weight = 8
     #https://feathericons.com/
     #export PATH=$PATH:/usr/local/go/bin
