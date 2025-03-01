@@ -1,6 +1,14 @@
 {{ define "main" }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<style>
+  #pub {padding: 5px; border-width: 2px; border-style: none; background-color: #ffffff; font-size: 1.2em; margin-top: 20px; margin-bottom: 20px;}
+  #pub name{font-weight: bold;}
+  #pub name{color:#2a2727;}
+  #pub link{color:#76c9ea;}
+  #pub link{font-weight: lighter;}
+  #pub journal{font-style: italic; color: #ff9248;}
+  #pub authors{color: #898989;}
+  </style>
 
 <div class="container-fluid">
   <div class="row">
@@ -8,15 +16,15 @@
     <div id="pub" class="pub">
       <a href="https://lilykoff.github.io/nhanes_steps_mortality/vignettes/NHANES_Steps_Mortality_Vignette.html"><name>Steps and Mortality in NHANES</name><br>
       </a>
-      Accompanies manuscript <a href="https://pubmed.ncbi.nlm.nih.gov/39589008/"><name>Comparing Step Counting Algorithms for High-Resolution Wrist Accelerometry Data in NHANES 2011-2014 </name></a>
+        <authors>Accompanies manuscript <a href="https://pubmed.ncbi.nlm.nih.gov/39589008/"><name>Comparing Step Counting Algorithms for High-Resolution Wrist Accelerometry Data in NHANES 2011-2014</name></a></authors>
+
       </div>
       <div id="pub" class="pub">
         <a href="https://lilykoff.github.io/nhanes_steps_mortality/vignettes/Physionet_Download.html"><name>Downloading NHANES minute-level derivatives</name><br>
         </a>
-        Guide to downloading minute-level steps and other data from our <a href="https://physionet.org/content/minute-level-step-count-nhanes/1.0.0/"><name>PhysioNet Respository</name></a>
+        <authors>Guide to downloading minute-level steps and other data from our <a href="https://physionet.org/content/minute-level-step-count-nhanes/1.0.0/"><name>PhysioNet Respository</name></a></authors>
         </div>
   </div>
   </div>
 
 {{ end }}
-
