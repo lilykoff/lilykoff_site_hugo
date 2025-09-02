@@ -195,7 +195,7 @@ a:hover {
 .project-card img {
   width: 300px;       /* fixed width */
   height: 200px;      /* fixed height */
-  object-fit: cover;  
+  object-fit: contain;  
   border-radius: 6px;
   margin-bottom: 1rem;
   background-color: rgb(var(--dark-primary-color));
