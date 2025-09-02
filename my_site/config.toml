@@ -22,7 +22,15 @@ enableRobotsTXT = true
   avatarSize = "size-xl"
 
   # Description to display on homepage
-  description = "PhD candidate in Biostatistics at Johns Hopkins, developing methods for wearable device data and physical activity research."
+  description = "PhD candidate in Biostatistics at Johns Hopkins"
+
+  descriptionHTML = """
+  <p>I’m a Biostatistics PhD candidate at <a href="https://publichealth.jhu.edu/departments/biostatistics">Johns Hopkins</a>, 
+  where I work with <a href="https://publichealth.jhu.edu/faculty/1442/ciprian-m-crainiceanu">Ciprian Crainiceanu</a> 
+  and the <a href="https://www.smart-stats.org/">Wearable and Implantable Technology (WIT)</a> research group. 
+  My interests include methods for processing + analysis of wearable device and other high density data,
+  and physical activity + human performance research.</p>
+  """
 
   # Accent color is displayed when you hover over <a> tags
   accentColor = "#66E5FF"
