@@ -22,7 +22,7 @@ enableRobotsTXT = true
   avatarSize = "size-xl"
 
   # Description to display on homepage
-  description = "Biostatistics PhD candidate & endurance sports enthusiast"
+  description = "PhD candidate in Biostatistics at Johns Hopkins, developing methods for wearable device data and physical activity research."
 
   # Accent color is displayed when you hover over <a> tags
   accentColor = "#66E5FF"
@@ -58,45 +58,39 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.main]]
-    name = "About"
-    pre = "<span data-feather='user'></span>"
-    url = "/about/"
-    weight = 2
-
-  [[menu.main]]
     name = "Publications"
     pre = "<span data-feather='paperclip'></span>"
     url = "/pubs/"
-    weight = 3
+    weight = 2
 
   [[menu.main]]
     name = "Projects"
     pre = "<span data-feather='codesandbox'></span>"
     url = "/projects/"
-    weight = 4
+    weight = 3
 
   [[menu.main]]
     name = "Posters"
     pre = "<span data-feather='image'></span>"
     url = "/posters/"
-    weight = 5
+    weight = 4
   
   [[menu.main]]
     name = "Talks"
     pre = "<span data-feather='message-circle'></span>"
     url = "/talks/"
-    weight = 6
+    weight = 5
 
   [[menu.main]]
     name = "CV"
     pre = "<span data-feather='external-link'></span>"
     url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
-    weight = 7
+    weight = 6
 
  [[menu.main]]
     name = "Vignettes"
     pre = "<span data-feather='file-text'></span>"
     url = "/vign/"
-    weight = 8
+    weight = 7
     #https://feathericons.com/
     #export PATH=$PATH:/usr/local/go/bin
