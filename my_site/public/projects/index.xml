@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Lily Koffman, MS</title>
+    <link>http://lilykoff.com/projects/</link>
+    <description>Recent content in Projects on Lily Koffman, MS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lilykoff.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hemodynamics</title>
+      <link>http://lilykoff.com/projects/project-3/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open-source step counting</title>
+      <link>http://lilykoff.com/projects/project-2/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking fingerprinting</title>
+      <link>http://lilykoff.com/projects/project-1/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

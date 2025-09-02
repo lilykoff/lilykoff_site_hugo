@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Lily Koffman</title>
+    <title>Home on Lily Koffman, MS</title>
     <link>http://lilykoff.com/</link>
-    <description>Recent content in Home on Lily Koffman</description>
+    <description>Recent content in Home on Lily Koffman, MS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Apr 2024 17:55:28 +0800</lastBuildDate><atom:link href="http://lilykoff.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lilykoff.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NHANES Weartime Vignette</title>
       <link>http://lilykoff.com/posts/nhanes_wt/</link>
@@ -14,6 +14,33 @@
       
       <guid>http://lilykoff.com/posts/nhanes_wt/</guid>
       <description>NHANES 2011-2014 Weartime Vignette Table of contents Background Weartime in NHANES 2011-2014 Distributions of wake, sleep, nonwear, unkown Wake, sleep, unknown &amp;gt;22 Hours of Sleep &amp;gt;22 Hours of Wake Large amounts of unknown Patterns of wake, sleep wear by age Final criteria NHANES 2011-2014 Weartime Vignette CodeShow All CodeHide All CodeView Source Background When analyzing accelerometry data collected in free living settings, weartime estimation is a crucial first step. If an individual isn’t actually wearing her device, we don’t want to estimate her physical activity as zero!</description>
+    </item>
+    
+    <item>
+      <title>Hemodynamics</title>
+      <link>http://lilykoff.com/projects/project-3/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open-source step counting</title>
+      <link>http://lilykoff.com/projects/project-2/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking fingerprinting</title>
+      <link>http://lilykoff.com/projects/project-1/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-1/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -49,15 +76,6 @@
       <pubDate>Wed, 27 Dec 2023 14:10:04 -0500</pubDate>
       
       <guid>http://lilykoff.com/posters/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://lilykoff.com/projects/</link>
-      <pubDate>Wed, 27 Dec 2023 14:10:04 -0500</pubDate>
-      
-      <guid>http://lilykoff.com/projects/</guid>
       <description></description>
     </item>
     
