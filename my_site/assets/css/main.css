@@ -20,6 +20,173 @@
   src: url("/fonts/Lato-Bold.ttf");
 }
 
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+/* Dropdown button */
+/* Dropdown button */
+/* Make dropdown buttons look like normal links */
+.dropbtn {
+  background: none;         /* remove default button background */
+  border: none;             /* remove border */
+  padding: 0;               /* remove default padding */
+  font: inherit;            /* inherit font size and family */
+  color: #0056B3;            /* inherit link color */
+  cursor: pointer;          /* pointer cursor like links */
+  text-decoration: none;    /* remove underline */
+}
+
+/* Hover color matches other links */
+.dropbtn:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  z-index: 1;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 6px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card img{
+  width: 300px;       /* fixed width */
+  height: 200px;      /* fixed height */
+  object-fit: cover;  /* crop to fill container without distortion */
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-links a {
+  margin: 0 0.5rem;
+  color: #0056B3;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: #66E5FF;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 820px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* ==============================
+   HOMEPAGE: NAME + DESCRIPTION
+   ============================== */
+.home-about h1,
+.home-about h3 {
+  text-align: center;
+  max-width: 700px;        /* prevents text from spanning too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-about h3 {
+  font-size: 1.25em;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* ==============================
+   HOMEPAGE: ABOUT PARAGRAPH
+   ============================== */
+.markdown-content {
+  text-align: center;
+  line-height: 1.6;
+  width: 90%;           /* increased from 80% */
+  max-width: 900px;     /* increased from 700px */
+  margin: 2rem auto;
+}
+
+
+.markdown-content p {
+  margin-bottom: 1rem;
+}
+
+/* ==============================
+   LINKS
+   ============================== */
+.markdown-content a {
+  color: #0056B3;          /* professional dark blue */
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  color: #66E5FF;          /* theme accent color on hover */
+  text-decoration: underline;
+}
+
 html {
   background-color: rgb(var(--light-primary-color));
   color: var(--light-text-color);

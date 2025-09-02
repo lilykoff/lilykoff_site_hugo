@@ -3,7 +3,7 @@ defaultContentLanguage = "en"
 languageCode = "en"
 
 
-title = "Lily Koffman"
+title = "Lily Koffman, MS"
 theme = "gokarna"
 
 [contentFormats]
@@ -24,14 +24,6 @@ enableRobotsTXT = true
   # Description to display on homepage
   description = "PhD candidate in Biostatistics at Johns Hopkins"
 
-  descriptionHTML = """
-  <p>I’m a Biostatistics PhD candidate at <a href="https://publichealth.jhu.edu/departments/biostatistics">Johns Hopkins</a>, 
-  where I work with <a href="https://publichealth.jhu.edu/faculty/1442/ciprian-m-crainiceanu">Ciprian Crainiceanu</a> 
-  and the <a href="https://www.smart-stats.org/">Wearable and Implantable Technology (WIT)</a> research group. 
-  My interests include methods for processing + analysis of wearable device and other high density data,
-  and physical activity + human performance research.</p>
-  """
-
   # Accent color is displayed when you hover over <a> tags
   accentColor = "#66E5FF"
 
@@ -40,9 +32,32 @@ enableRobotsTXT = true
 
   # You can use this to inject any HTML in the <head> tag.
   # Ideal usecase for this is to import custom js/css or add your analytics snippet
-  customHeadHTML = ""
+  customHeadHTML = """
+  <style>
+    .home-about h1,
+    .home-about h3 {
+      text-align: center;
+    }
 
-  metaKeywords = ["blog", "gokarna", "hugo"]
+    .centered-text {
+      text-align: center;
+      max-width: 700px;
+      margin: 2rem auto;
+      line-height: 1.6;
+    }
+    .centered-text p {
+      margin-bottom: 1rem;
+    }
+
+    .centered-text a {
+      color: #0077cc;
+    }
+    .centered-text a:hover {
+      color: #005599;
+    }
+  </style>
+  """
+  metaKeywords = ["biostatistics", "wearables", "wearable devices", "accelerometry"]
 
   
   # Footer text
@@ -65,11 +80,11 @@ enableRobotsTXT = true
     url = "/"
     weight = 1
 
-  [[menu.main]]
-    name = "Publications"
-    pre = "<span data-feather='paperclip'></span>"
-    url = "/pubs/"
-    weight = 2
+#  [[menu.main]]
+#    name = "Publications"
+#    pre = "<span data-feather='paperclip'></span>"
+#    url = "/pubs/"
+#    weight = 2
 
   [[menu.main]]
     name = "Projects"
@@ -87,13 +102,13 @@ enableRobotsTXT = true
     name = "Talks"
     pre = "<span data-feather='message-circle'></span>"
     url = "/talks/"
-    weight = 5
+    weight = 4
 
   [[menu.main]]
     name = "CV"
     pre = "<span data-feather='external-link'></span>"
     url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
-    weight = 6
+    weight = 2
 
  [[menu.main]]
     name = "Vignettes"

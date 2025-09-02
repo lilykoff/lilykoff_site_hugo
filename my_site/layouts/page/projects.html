@@ -1,68 +1,28 @@
 {{ define "main" }}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-  .entry {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-  }
-  .entry img, .entry iframe {
-      width: 100px;
-      height: 100px;
-      margin-left: 15px;
-  }
-  .entry a {
-      text-decoration: none;
-  }
-  .entry a:hover {
-      text-decoration: underline;
-  }
-</style>
-</head>
-<body>
-
-    <div class="entry">
-        <div>
-            <h3><a href="https://doi.org/10.13026/ah0j-3z47">PhysioNet Repository</a></h3>
-            <p>Open-source, Minute-level Step Counts from NHANES</p>
+<section class="projects-section">
+  <div class="projects-grid">
+    {{ $projects := where .Site.Pages "Section" "projects" }}
+    {{ if gt (len $projects) 0 }}
+      {{ range $projects.ByDate.Reverse }}
+        <div class="project-card">
+          {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }} plot" class="project-img">
+          {{ end }}
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.description }}</p>
+          <div class="project-links">
+            {{ range .Params.links }}
+              <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+            {{ end }}
+          </div>
         </div>
-        <img src="../images/steps.jpg" alt="Steps">
-    </div>
-
-    <div class="entry">
-      <div>
-          <h3><a href="https://usskiandsnowboard.org/news/woman-behind-numbers-how-lily-koffman-helps-mold-better-athletes-through-science" target="_blank">The Woman Behind the Numbers</a></h3>
-          <p>US Ski and Snowboard Press Release</p>
+      {{ end }}
+    {{ else }}
+      <div class="project-card">
+        <h2>Coming Soon!</h2>
+        <p>This page will feature my research projects, including methods for wearable device data, plots, and links to papers or code.</p>
       </div>
-      <img src="https://usskiandsnowboard.org/sites/default/files/images/news-articles/hero-image/2020-09/DSC08340.jpg" alt="US Ski and Snowboard">
-    </div>
-
-    <div class="entry">
-      <div>
-          <h3><a href="https://fasterskier.com/2021/05/a-new-push-for-equal-distance-racing/" target="_blank">FasterSkier: A New Push for Equal Distance Racing</a></h3>
-          <p>Equal Distance Ski Racing Analysis</p>
-      </div>
-      <img src="https://fasterskier.com/wp-content/blogs.dir/1/files/2021/05/Skate.jpeg" class="card-img-bottom" alt="Equal Distance Ski Racing">
-    </div>
-
-    <div class="entry">
-      <div>
-          <h3><a href="https://www.comcastsportstech.com/event/livin-on-the-edge-u-s-ski-snowboards-competitive-edge-via-analytics/" target="_blank">Livin’ On the Edge: U.S. Ski &amp; Snowboard’s Competitive Edge via Analytics</a></h3>
-          <p>Comcast Sports Tech Webinar Panelist</p>
-      </div>
-      <iframe src="https://www.youtube.com/embed/gKojeBd-4JI" title="YouTube video player" allowfullscreen></iframe>
-    </div>
-
-    <div class="entry">
-      <div>
-          <h3><a href="https://drive.google.com/drive/folders/1HjrZKbM9zdiVKNp-lcb3jFxn5D2arp0S" target="_blank">Modeling Cycling Performance Using Observational GPX Data</a></h3>
-          <p>Undergraduate Thesis</p>
-      </div>
-      <img src="../images/thesis.png" class="card-img-bottom" alt="Undergraduate Thesis">
-    </div>
-    
-
-</body>
-</html>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

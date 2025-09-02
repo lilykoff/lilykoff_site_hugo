@@ -1,101 +1,176 @@
+/* === Dark Mode CSS === */
+
+/* Dark mode color variables */
 :root {
-  --dark-primary-color: 34, 39, 46 !important;
-  --dark-secondary-color: #2d333b !important;
-  --dark-tertiary-color: #646464 !important;
-  --dark-text-color: white !important;
+  --dark-primary-color: 34, 39, 46;       /* page background */
+  --dark-secondary-color: #2d333b;       /* card, table, header backgrounds */
+  --dark-tertiary-color: #646464;        /* code blocks, borders */
+  --dark-text-color: #ffffff;            /* main text */
 }
 
-html {
+/* ===== Dark Mode Base Styling ===== */
+body.dark-mode,
+body.dark-mode html {
   background-color: rgb(var(--dark-primary-color)) !important;
-  color: var(--dark-text-color);
-  fill: var(--dark-text-color);
-}
-
-.header {
-  background-color: rgba(var(--dark-primary-color), 0.95) !important;
-}
-
-.nav-hamburger-list {
-  background: rgba(var(--dark-primary-color), 1) !important;
-}
-
-.nav-links .nav-icons-divider {
-  color: var(--dark-secondary-color) !important;
-}
-
-a:hover .feather-moon {
-  fill: white !important;
-  color: white !important;
-}
-
-.social-icons-list .social-icon,
-.social-icons-list .social-icon a:visited  {
+  color: var(--dark-text-color) !important;
   fill: var(--dark-text-color) !important;
 }
 
-.social-icons-list .social-icon a:hover {
-  fill: var(--accent-color) !important;
+/* ===== Header ===== */
+body.dark-mode .header {
+  background-color: rgba(var(--dark-primary-color), 0.95) !important;
+  color: var(--dark-text-color) !important;
 }
 
-.post-tags .post-tag:hover {
-  background-color: var(--dark-text-color) !important;
-  color: rgb(var(--dark-primary-color)) !important;
+body.dark-mode .nav-hamburger-list {
+  background-color: rgba(var(--dark-primary-color), 1) !important;
 }
 
-.tags-list .post-tags .post-tag a .tag-posts-count {
-  background-color: var(--dark-secondary-color) !important;
-}
-
-.tags-list .post-tags .post-tag:hover a .tag-posts-count {
-  background-color: var(--dark-text-color) !important;
-  color: rgb(var(--dark-primary-color)) !important;
-}
-
-.footer {
-  border-top-color: var(--dark-header-bg-color) !important;
-}
-
-blockquote {
-  color: darkgrey;
-  border-left-color: var(--dark-secondary-color) !important;
-}
-
-hr {
+body.dark-mode .nav-links .nav-icons-divider {
   color: var(--dark-secondary-color) !important;
 }
 
-table thead {
+/* ===== Links ===== */
+body.dark-mode a {
+  color: var(--accent-color) !important;
+}
+
+body.dark-mode a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* ===== Dropdown buttons ===== */
+body.dark-mode .dropbtn {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font: inherit !important;
+  color: var(--dark-text-color) !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body.dark-mode .dropbtn:hover {
+  color: var(--accent-color) !important;
+}
+
+/* ===== Social Icons ===== */
+body.dark-mode .social-icons-list .social-icon,
+body.dark-mode .social-icons-list .social-icon a:visited {
+  fill: var(--dark-text-color) !important;
+}
+
+body.dark-mode .social-icons-list .social-icon a:hover {
+  fill: var(--accent-color) !important;
+}
+
+/* ===== Project Cards ===== */
+body.dark-mode .project-card {
+  padding: 20px;
+  margin: 15px;
+  border-radius: 12px;
   background-color: var(--dark-secondary-color) !important;
+  border: 1px solid var(--dark-tertiary-color) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  color: var(--dark-text-color) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-table td,
-table th {
-  border-bottom-color: var(--dark-secondary-color) !important;
+/* Force all nested text to dark-text-color */
+body.dark-mode .project-card *,
+body.dark-mode .project-card h2,
+body.dark-mode .project-card p,
+body.dark-mode .project-card li,
+body.dark-mode .project-card span,
+body.dark-mode .project-card strong,
+body.dark-mode .project-card em {
+  color: var(--dark-text-color) !important;
+  background-color: transparent !important;
 }
 
-code,
-pre {
-  background-color: var(--dark-secondary-color) !important;
+/* Links inside project cards */
+body.dark-mode .project-card a {
+  color: var(--accent-color) !important;
+  text-decoration: underline;
 }
 
-:not(pre) > code {
+body.dark-mode .project-card a:hover {
+  color: var(--dark-secondary-color) !important;
+  background-color: var(--accent-color) !important;
+  text-decoration: none;
+}
+
+/* Project card image */
+body.dark-mode .project-card img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: var(--dark-primary-color);
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  display: block;
+}
+
+/* ===== Markdown Content ===== */
+body.dark-mode .markdown-content {
+  color: var(--dark-text-color) !important;
+}
+
+/* ===== Footer ===== */
+body.dark-mode .footer {
+  color: var(--dark-text-color) !important;
+  border-top-color: var(--dark-secondary-color) !important;
+}
+
+/* ===== Code blocks ===== */
+body.dark-mode code,
+body.dark-mode pre {
   background-color: var(--dark-tertiary-color) !important;
-  color: var(--dark-text-color);
+  color: var(--dark-text-color) !important;
 }
 
-.header-shadow {
-  box-shadow: rgb(33, 38, 45) 0px -1px 0px 0px inset;
+body.dark-mode :not(pre) > code {
+  background-color: var(--dark-tertiary-color) !important;
+  color: var(--dark-text-color) !important;
 }
 
-.arrow-logo { 
+/* ===== Tables ===== */
+body.dark-mode table thead {
+  background-color: var(--dark-secondary-color) !important;
+  color: var(--dark-text-color) !important;
+}
+
+body.dark-mode table td,
+body.dark-mode table th {
+  border-bottom-color: var(--dark-tertiary-color) !important;
+  color: var(--dark-text-color) !important;
+}
+
+/* ===== HR and Blockquotes ===== */
+body.dark-mode hr {
+  color: var(--dark-secondary-color) !important;
+}
+
+body.dark-mode blockquote {
+  color: lightgrey !important;
+  border-left-color: var(--dark-secondary-color) !important;
+}
+
+/* ===== Back to top arrow ===== */
+body.dark-mode .arrow-logo {
   background-color: var(--dark-secondary-color) !important;
 }
 
-/* TODO: Check if this is needed or not */
-/* 
-img,
-video {
-  filter: hue-rotate(180deg) contrast(100%) invert(100%);
-  -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
-} 
-*/
+/* ===== Misc overrides ===== */
+body.dark-mode .home-about h1,
+body.dark-mode .home-about h3,
+body.dark-mode .home-posts h2,
+body.dark-mode .list-posts .list-title,
+body.dark-mode .text-404 {
+  color: var(--dark-text-color) !important;
+}

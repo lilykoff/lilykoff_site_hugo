@@ -30,10 +30,11 @@
 {{ end }}
 
 {{ if os.FileExists "index-about.md" }}
-<div class="markdown-content">
+<div class="markdown-content centered-text">
     {{ readFile "index-about.md" | markdownify }}
 </div>
 {{ end }}
+
 
 {{ if isset .Site.Params "showpostsonhomepage" }}
 
