@@ -5,16 +5,41 @@
     {{ if gt (len $projects) 0 }}
       {{ range $projects.ByDate.Reverse }}
         <div class="project-card">
-          {{ if .Params.image }}
+          {{ if .Params.images }}
+          <p style="color: red; background: yellow;">
+  DEBUG INFO -- Type: {{ printf "%T" .Params.images }} || Count: {{ len .Params.images }}
+</p>
+          <div class="project-images">
+            {{ range $i, $img := .Params.images }}
+              <img src="{{ $img }}" alt="{{ $.Title }} image {{ add $i 1 }}" {{ if eq $i 0 }}class="active"{{ end }}>
+            {{ end }}
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+          {{ else if .Params.image }}
             <img src="{{ .Params.image }}" alt="{{ .Title }} plot" class="project-img">
           {{ end }}
+
           <h2>{{ .Title }}</h2>
           <p>{{ .Params.description }}</p>
+
           <div class="project-links">
             {{ range .Params.links }}
-              <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+              {{ if .urls }}
+              <div class="dropdown">
+                <button class="dropbtn">{{ .name }}</button>
+                <div class="dropdown-content">
+                  {{ range .urls }}
+                    <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+                  {{ end }}
+                </div>
+              </div>
+              {{ else }}
+                <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+              {{ end }}
             {{ end }}
           </div>
+
         </div>
       {{ end }}
     {{ else }}
@@ -25,4 +50,42 @@
     {{ end }}
   </div>
 </section>
+
+<!-- Carousel JS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.project-images').forEach(carousel => {
+    const images = carousel.querySelectorAll('img');
+    const prevButton = carousel.querySelector('.prev');
+    const nextButton = carousel.querySelector('.next');
+
+    if (images.length < 2) {
+      if (prevButton) prevButton.style.display = 'none';
+      if (nextButton) nextButton.style.display = 'none';
+      return;
+    }
+
+    let currentIndex = 0;
+
+    const showImage = (index) => {
+      images.forEach((img, i) => {
+        img.classList.remove('active');
+        if (i === index) {
+          img.classList.add('active');
+        }
+      });
+    };
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+  });
+});
+</script>
 {{ end }}

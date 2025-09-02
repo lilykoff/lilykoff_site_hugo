@@ -1,40 +1,100 @@
 {{ define "main" }}
 <section class="projects-section">
-    {{ if .Content }}
-    <div class="markdown-content" style="text-align:center;">
-        {{ .Content }}
-    </div>
-    {{ end }}
 
-    <div class="projects-grid"
-        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
-        {{ range .Pages.ByDate.Reverse }}
-        <div class="project-card"
-            style="width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; text-align: center;">
-            {{ if .Params.image }}
-            <img src="{{ .Params.image }}" alt="{{ .Title }} plot"
-                style="width: 100%; border-radius: 4px; margin-bottom: 1rem;">
-            {{ end }}
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Params.description }}</p>
-            <div class="project-links" style="margin-top: 0.5rem;">
-                {{ range .Params.links }}
-                {{ if .urls }}
-                <div class="dropdown">
-                    <button class="dropbtn">{{ .name }}</button>
-                    <div class="dropdown-content">
-                        {{ range .urls }}
-                        <a href="{{ .url }}" target="_blank">{{ .name }}</a>
-                        {{ end }}
-                    </div>
-                </div>
-                {{ else }}
-                <a href="{{ .url }}" target="_blank">{{ .name }}</a>
-                {{ end }}
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
+  {{/* This will render any markdown content you write in _index.md */}}
+  {{ if .Content }}
+    <div class="markdown-content">
+      {{ .Content }}
     </div>
+  {{ end }}
+
+  <div class="projects-grid">
+    {{ range .Pages.ByDate.Reverse }}
+      <div class="project-card">
+
+        {{/* --- ADVANCED CAROUSEL --- */}}
+        {{ if .Params.carousel }}
+          <div class="project-images">
+            {{ range $i, $slide := .Params.carousel }}
+              <img src="{{ $slide.src }}" alt="{{ $.Title }} image {{ add $i 1 }}" {{ if eq $i 0 }}class="active"{{ end }}>
+              <div class="carousel-links {{ if eq $i 0 }}active{{ end }}">
+                {{ range $slide.links }}
+                  <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        {{/* --- FALLBACK FOR A SINGLE IMAGE --- */}}
+        {{ else if .Params.image }}
+          <div class="project-images">
+            <img src="{{ .Params.image }}" alt="{{ .Title }} plot" class="active">
+          </div>
+        {{ end }}
+
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.description }}</p>
+
+        {{/* Renders the general project links at the bottom */}}
+        <div class="project-links">
+          {{ range .Params.links }}
+            {{ if .urls }}
+              <div class="dropdown">
+                <button class="dropbtn">{{ .name }}</button>
+                <div class="dropdown-content">
+                  {{ range .urls }}
+                    <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+                  {{ end }}
+                </div>
+              </div>
+            {{ else }}
+              <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
+
+      </div>
+    {{ end }}
+  </div>
 </section>
+
+{{/* --- JavaScript for the Carousel --- */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.project-images').forEach(carousel => {
+    const images = carousel.querySelectorAll('img');
+    const links = carousel.querySelectorAll('.carousel-links');
+    const prevButton = carousel.querySelector('.prev'); // Re-added
+    const nextButton = carousel.querySelector('.next');
+
+    if (images.length < 2) {
+      if (prevButton) prevButton.style.display = 'none'; // Re-added
+      if (nextButton) nextButton.style.display = 'none';
+      return;
+    }
+
+    let currentIndex = 0;
+
+    const showSlide = (index) => {
+      images.forEach(img => img.classList.remove('active'));
+      links.forEach(link => link.classList.remove('active'));
+      
+      if (images[index]) images[index].classList.add('active');
+      if (links[index]) links[index].classList.add('active');
+    };
+
+    // Re-added the event listener for the 'previous' button
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showSlide(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showSlide(currentIndex);
+    });
+  });
+});
+</script>
 {{ end }}

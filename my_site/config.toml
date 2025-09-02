@@ -98,11 +98,11 @@ enableRobotsTXT = true
     url = "/posters/"
     weight = 4
   
-  [[menu.main]]
-    name = "Talks"
-    pre = "<span data-feather='message-circle'></span>"
-    url = "/talks/"
-    weight = 4
+  #[[menu.main]]
+  #  name = "Talks"
+  #  pre = "<span data-feather='message-circle'></span>"
+  #  url = "/talks/"
+  #  weight = 4
 
   [[menu.main]]
     name = "CV"
