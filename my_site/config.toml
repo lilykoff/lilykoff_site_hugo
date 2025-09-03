@@ -91,11 +91,11 @@ enableRobotsTXT = true
     url = "/posters/"
     weight = 4
   
-  #[[menu.main]]
-  #  name = "Talks"
-  #  pre = "<span data-feather='message-circle'></span>"
-  #  url = "/talks/"
-  #  weight = 4
+  [[menu.main]]
+    name = "Talks"
+    pre = "<span data-feather='message-circle'></span>"
+    url = "/talks/"
+    weight = 6
 
   [[menu.main]]
     name = "CV"
@@ -107,6 +107,6 @@ enableRobotsTXT = true
     name = "Vignettes"
     pre = "<span data-feather='file-text'></span>"
     url = "/vign/"
-    weight = 7
+    weight = 5
     #https://feathericons.com/
     #export PATH=$PATH:/usr/local/go/bin

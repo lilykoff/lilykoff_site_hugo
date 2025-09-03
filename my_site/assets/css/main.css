@@ -1065,3 +1065,138 @@ table td {
       visibility: hidden;
   }
 }
+
+/* Main container for the talks page */
+.talks-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.talks-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* The main timeline container */
+/* The main timeline container */
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  
+  /* --- THIS IS THE FIX --- */
+  /* This forces the container to wrap its children, giving it height. */
+  overflow: hidden; 
+}
+
+/* The central vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  background-color: var(--border-color);
+}
+
+/* A single talk/event on the timeline */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+}
+
+/* The circular marker on the timeline */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid var(--accent-color);
+  z-index: 1;
+}
+
+/* --- Alternating Left/Right Layout --- */
+/* ODD items are on the LEFT */
+.timeline-item:nth-child(odd) {
+  float: left; /* Use float for stable positioning */
+  padding-right: 3rem;
+  text-align: right;
+  clear: both; /* Ensure items don't stack horizontally */
+}
+.timeline-item:nth-child(odd)::before {
+  right: -9px;
+}
+
+/* EVEN items are on the RIGHT */
+.timeline-item:nth-child(even) {
+  float: right; /* Use float for stable positioning */
+  padding-left: 3rem;
+  clear: both; /* Ensure items don't stack horizontally */
+}
+.timeline-item:nth-child(even)::before {
+  left: -9px;
+}
+
+/* The content card for each talk */
+.timeline-content {
+  background-color: var(--card-bg-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* (The rest of your .timeline-date, h3, etc. styles remain the same) */
+/* (The rest of your .timeline-date, h3, .timeline-event, and .timeline-links styles remain the same) */
+
+.timeline-date {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+.timeline-event {
+  font-style: italic;
+  color: var(--text-secondary-color);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* The container for link buttons */
+.timeline-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.timeline-links a:hover {
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+}

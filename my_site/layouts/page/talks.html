@@ -1,60 +1,50 @@
 {{ define "main" }}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-#pub {padding: 5px; border-width: 2px; border-style: none; background-color: #ffffff; font-size: 1.2em; margin-top: 20px; margin-bottom: 20px;}
-#pub name{font-weight: bold;}
-#pub name{color:#2a2727;}
-#pub link{color:#76c9ea;}
-#pub link{font-weight: lighter;}
-#pub journal{font-style: italic; color: #ff9248;}
-#pub authors{color: #898989;}
-</style>
-
-<div class="container-fluid">
-  <div class="row">
-    <h2>Conference and Workshop Talks</h2>
-    <div id="pub" class="pub">
-      <name> Walking Fingerprinting Using Functional Data Analysis</name><br>
-      <a href="https://lilykoff.github.io/emory_fnl_data/"><name>[Slides]</name></a>
-       <journal>Functional Data Analysis Working Group, Emory University, April 15 2025</journal>
-      </div>
-    <div id="pub" class="pub">
-      <name> Walking Fingerprinting in a Large Epidemiological Study</name><br>
-      <a href="https://lilykoff.github.io/nhanes_fingerprinting/"><name>[Slides]</name></a>
-       <journal>Building Future Faculty Program, North Carolina State University, April 10 2025</journal>
-      </div>
-    <div id="pub" class="pub">
-      <name>Statistical Methods for Female Health: From Functional Data Approaches to Hierarchical Modeling</name><br>
-      </a>
-      <a href="https://www.enar.org/meetings/spring2025/program/Invited_Preliminary_Program.cfm"><name>Session Chair</name></a>
-      <name>with speakers Carly Brantner, Madison Stoms, Jeff Goldsmith, Jessica Freemas</name>
-       <journal>ENAR Spring Meeting, March 25 2025</journal>
-      </div>
-    <div id="pub" class="pub">
-      <name>NHANES Accelerometry and Derivatives</name><br>
-      </a>
-      <a href="https://www.birs.ca/events/2025/5-day-workshops/25w5474/videos/watch/202502261019-Koffman.html"><name>[Video]</name></a>
-      <a href="https://jhuwit.github.io/nhanes_derivatives"><name>[Slides]</name></a>
-
-       <journal>BIRS: Emerging Statistical Methods for Digital Health Data, February 26 2025 </journal>
-      </div>
-    <div id="pub" class="pub">
-      <name> A nonrandom sample of medical statistics</name><br>
-      <a href="https://lilykoff.github.io/grand_rounds_2024/"><name>[Slides]</name></a>
-       <journal> MedStar Health General Surgery Baltimore Grand Rounds, March 8 2024 </journal>
-      </div>
-    <div id="pub" class="pub">
-      <name> Application of Open-Source Step Counting Algorithms on Publicly-Available Data</name><br>
-      <a href="https://lilykoff.github.io/step_algorithms/"><name>[Slides]</name></a>
-       <journal> Pre-ENAR Workshop: Statistical Methods for Digital Health Technologies Data, March 9 2024 </journal>
-      </div>
-    <div id="pub" class="pub">
-      <name> Walking fingerprinting</name><br>
-      <a href="https://lilykoff.github.io/ml_walking_fingerprint/"><name>[Slides]</name></a>
-       <journal> ENAR Spring Meeting, March 11 2024</journal>
-      </div>
-  </div>
+<div class="talks-container">
+  <div class="vignette-header">
+    <h1>Conference & Workshop Talks</h1>
+    <p>A chronological record of my speaking engagements and presentations</p>
   </div>
 
+  <div class="timeline">
+    
+    {{/* --- Timeline Item --- */}}
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">April 15, 2025</span>
+        <h3>Walking Fingerprinting Using Functional Data Analysis</h3>
+        <p class="timeline-event">Functional Data Analysis Working Group, Emory University</p>
+        <div class="timeline-links">
+          <a href="https://lilykoff.github.io/emory_fnl_data/" target="_blank"><i data-feather="monitor"></i> Slides</a>
+        </div>
+      </div>
+    </div>
+
+    {{/* --- Timeline Item --- */}}
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">April 10, 2025</span>
+        <h3>Walking Fingerprinting in a Large Epidemiological Study</h3>
+        <p class="timeline-event">Building Future Faculty Program, North Carolina State University</p>
+        <div class="timeline-links">
+          <a href="https://lilykoff.github.io/nhanes_fingerprinting/" target="_blank"><i data-feather="monitor"></i> Slides</a>
+        </div>
+      </div>
+    </div>
+
+    {{/* --- Timeline Item --- */}}
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">March 25, 2025</span>
+        <h3>Statistical Methods for Female Health</h3>
+        <p class="timeline-event">ENAR Spring Meeting (Session Chair)</p>
+        <div class="timeline-links">
+          <a href="https://www.enar.org/meetings/spring2025/program/Invited_Preliminary_Program.cfm" target="_blank"><i data-feather="users"></i> Session Info</a>
+        </div>
+      </div>
+    </div>
+    
+    {{/* --- Add other talks here following the same structure --- */}}
+
+  </div>
+</div>
 {{ end }}
-
