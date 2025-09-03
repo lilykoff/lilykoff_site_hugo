@@ -100,7 +100,7 @@ a:hover {
 /* Normal links (e.g., GitHub) */
 .project-links a {
     color: var(--accent-color);
-    text-decoration: underline;
+    # text-decoration: underline;
     padding: 6px 12px;
     border-radius: 6px;
     transition: background-color 0.2s, color 0.2s;
@@ -121,7 +121,7 @@ a:hover {
 /* Dropdown button styled like normal project link */
 .project-links .dropdown .dropbtn {
     color: var(--accent-color);
-    text-decoration: underline;
+    # text-decoration: underline;
     background: none;
     border: none;
     padding: 6px 12px;
@@ -171,7 +171,7 @@ a:hover {
 .project-card a,
 .project-card .dropdown .dropbtn {
     color: var(--accent-color) !important;  /* same as GitHub link */
-    text-decoration: underline;
+    # text-decoration: underline;
 }
 
 .project-card a:hover,
