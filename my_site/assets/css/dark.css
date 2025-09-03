@@ -271,3 +271,11 @@ blockquote {
 .vignette-header p {
   color: var(--text-secondary-color);
 }
+.timeline-list {
+  border-left-color: #444c56; /* Use a direct dark gray color */
+}
+/* In dark.css */
+.timeline-content {
+  /* Add a subtle border around the content card in dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* A very light, transparent white */
+}
