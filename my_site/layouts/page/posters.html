@@ -6,14 +6,15 @@
 
   {{/* --- Poster Box 1 --- */}}
   <div class="poster-box">
-    <a href="/images/Fingerprinting.pdf" data-lightbox="posters" data-title="ENAR 2025: Fingerprinting Walking in a Large Epidemiological Study">
+    {{/* This link now points to the PDF and opens in a new tab */}}
+    <a href="/images/Fingerprinting.pdf" target="_blank">
       <img src="/images/fingerprinting.png" class="poster-thumb" alt="Poster thumbnail for ENAR 2025">
       <div class="poster-overlay">
         <div class="overlay-text">
           <span class="conference-name">ENAR 2025</span>
           <span class="conference-location">New Orleans, LA</span>
           <span class="enlarge-prompt">
-            <i data-feather="zoom-in"></i> Click to Enlarge
+            <i data-feather="file-text"></i> View PDF
           </span>
         </div>
       </div>
@@ -21,20 +22,15 @@
   </div>
 
   {{/* --- Poster Box 2 (Example) --- */}}
-  {{/* You can add more posters by copying the poster-box div.
-    Just make sure to update the image paths and the text!
-  */}}
   <div class="poster-box">
-    {{/* Link to a future poster image */}}
-    <a href="/images/fitbit_poster.pdf" data-lightbox="posters" data-title="APTA-CSM 2023: Identifying Unique Subgroups...">
-      {{/* Link to a future thumbnail image */}}
+    <a href="/images/fitbit_poster.pdf" target="_blank">
       <img src="/images/fitbit_poster.png" class="poster-thumb" alt="Poster thumbnail for APTA-CSM 2023">
       <div class="poster-overlay">
         <div class="overlay-text">
           <span class="conference-name">APTA-CSM 2023</span>
           <span class="conference-location">San Diego, CA</span>
           <span class="enlarge-prompt">
-            <i data-feather="zoom-in"></i> Click to Enlarge
+            <i data-feather="file-text"></i> View PDF
           </span>
         </div>
       </div>
@@ -42,4 +38,5 @@
   </div>
 
 </div>
+
 {{ end }}

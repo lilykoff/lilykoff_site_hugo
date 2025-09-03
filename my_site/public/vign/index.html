@@ -67,16 +67,11 @@
     .centered-text p {
       margin-bottom: 1rem;
     }
-
-    .centered-text a {
-      color: #0077cc;
-    }
-    .centered-text a:hover {
-      color: #005599;
-    }
   </style>
   
     
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js" defer></script>
 </head>
 <body>
         <script type="text/javascript">
@@ -170,34 +165,34 @@
     </nav>
 </header>
 <main id="content">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  #pub {padding: 5px; border-width: 2px; border-style: none; background-color: #ffffff; font-size: 1.2em; margin-top: 20px; margin-bottom: 20px;}
-  #pub name{font-weight: bold;}
-  #pub name{color:#2a2727;}
-  #pub link{color:#76c9ea;}
-  #pub link{font-weight: lighter;}
-  #pub journal{ color: #ff9248;}
-  #pub authors{color: #898989;}
-  </style>
+<div class="vignette-container">
+  <div class="vignette-header">
+    <h1>Vignettes</h1>
+    <p>Step-by-step guides for my research projects.</p>
+  </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <h2>Vignettes</h2>
-    <div id="pub" class="pub">
-      <a href="https://lilykoff.github.io/nhanes_steps_mortality/vignettes/NHANES_Steps_Mortality_Vignette.html"><name>Steps and Mortality in NHANES</name><br>
-      </a>
-        <authors>Accompanies manuscript <a href="https://pubmed.ncbi.nlm.nih.gov/39589008/"><name>Comparing Step Counting Algorithms for High-Resolution Wrist Accelerometry Data in NHANES 2011-2014</name></a></authors>
-
+  <div class="vignette-list">
+    
+    
+    <article class="vignette-item">
+      <div class="vignette-content">
+        <h2><a href="https://lilykoff.github.io/nhanes_steps_mortality/vignettes/NHANES_Steps_Mortality_Vignette.html" target="_blank">Steps and Mortality in NHANES</a></h2>
+        <p>Accompanies the manuscript comparing step counting algorithms for high-resolution wrist accelerometry data in NHANES 2011-2014.</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/39589008/" class="vignette-cta" target="_blank">Read the Paper</a>
       </div>
-      <div id="pub" class="pub">
-        <a href="https://lilykoff.github.io/nhanes_steps_mortality/vignettes/Physionet_Download.html"><name>Downloading NHANES minute-level derivatives</name><br>
-        </a>
-        <authors>Guide to downloading minute-level steps and other data from our <a href="https://physionet.org/content/minute-level-step-count-nhanes/1.0.0/"><name>PhysioNet Respository</name></a></authors>
-        </div>
-  </div>
-  </div>
+    </article>
 
+    
+    <article class="vignette-item">
+      <div class="vignette-content">
+        <h2><a href="https://lilykoff.github.io/nhanes_steps_mortality/vignettes/Physionet_Download.html" target="_blank">Downloading NHANES Minute-Level Derivatives</a></h2>
+        <p>A guide to downloading minute-level steps and other data derived from our research.</p>
+        <a href="https://physionet.org/content/minute-level-step-count-nhanes/1.0.0/" class="vignette-cta" target="_blank">View on PhysioNet</a>
+      </div>
+    </article>
+
+  </div>
+</div>
 
         </main><footer class="footer">
     
