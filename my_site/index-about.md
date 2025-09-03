@@ -1,4 +1,20 @@
 I’m a biostatistician developing methods to process and analyze wearable device data, including accelerometry and hemodynamics. My work is problem-driven and collaborative, with applications in physical activity, epidemiology, and cardiac surgery, alongside <a href="http://www.ciprianstats.org/">Ciprian Crainiceanu</a> and the Wearable and Implantable Technology (WIT) research group.
 <p>I was born and raised in Orono, Maine. I got my undergraduate degree in Statistics at 
-<a href="https://www.harvard.edu/">Harvard</a>, where I captained the <a href="https://gocrimson.com/sports/alpine-skiing/roster/lily-koffman/8198">Nordic ski team</a>, and my Master’s degree in Biostatistics at the 
+Harvard, where I captained the <a href="https://gocrimson.com/sports/alpine-skiing/roster/lily-koffman/8198">Nordic ski team</a>, and my Master’s degree in Biostatistics at the 
 <a href="https://www.hsph.harvard.edu/">Harvard School of Public Health</a>. Previously, I worked for <a href="https://usskiandsnowboard.org/">US Ski and Snowboard</a> as a high performance intern and <a href="https://www.womeninsportstech.org/fellowship-alumni">Women in Sports Technology (WiST) Fellow.</a></p>
+
+
+
+<div class="styled-hr">
+  <a href="https://github.com/lilykoff" target="_blank" aria-label="GitHub Profile">
+    <i data-feather="github"></i>
+  </a>
+</div>
+
+
+
+<div class="contribution-card">
+  <div class="contribution-graph">
+    <img src="https://ghchart.rshah.org/lilykoff" alt="GitHub Contributions Graph">
+  </div>
+</div>

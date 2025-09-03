@@ -57,12 +57,12 @@ enableRobotsTXT = true
   footer = ""
   socialIcons = [
     {name = "linkedin", url = "https://linkedin.com/in/lily-koffman"},
-    {name = "github", url = "https://github.com/lilykoff"},
+   #  {name = "github", url = "https://github.com/lilykoff"},
     {name = "email", url = "mailto:lkoffma2@jh.edu"},
     {name = "googlescholar", url = "https://scholar.google.com/citations?user=lOh2k5YAAAAJ&hl=en"},
     {name = "orcid", url = "https://orcid.org/0000-0003-1543-2896"},
     {name = "researchgate", url = "https://www.researchgate.net/profile/Lily-Koffman"},
-    {name = "medium", url = "https://medium.com/@lilykoffman"},
+   #{name = "medium", url = "https://medium.com/@lilykoffman"},
     {name = "strava", url = "https://www.strava.com/athletes/27249108"}
   ]
 #https://simpleicons.org/
@@ -83,7 +83,7 @@ enableRobotsTXT = true
     name = "Projects"
     pre = "<span data-feather='codesandbox'></span>"
     url = "/projects/"
-    weight = 3
+    weight = 2
 
   [[menu.main]]
     name = "Posters"
@@ -95,18 +95,18 @@ enableRobotsTXT = true
     name = "Talks"
     pre = "<span data-feather='message-circle'></span>"
     url = "/talks/"
-    weight = 6
+    weight = 5
 
   [[menu.main]]
     name = "CV"
     pre = "<span data-feather='external-link'></span>"
     url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
-    weight = 2
+    weight = 3
 
- [[menu.main]]
-    name = "Vignettes"
-    pre = "<span data-feather='file-text'></span>"
-    url = "/vign/"
-    weight = 5
-    #https://feathericons.com/
-    #export PATH=$PATH:/usr/local/go/bin
+# [[menu.main]]
+#    name = "Vignettes"
+#    pre = "<span data-feather='file-text'></span>"
+#    url = "/vign/"
+#    weight = 5
+#    #https://feathericons.com/
+#    #export PATH=$PATH:/usr/local/go/bin

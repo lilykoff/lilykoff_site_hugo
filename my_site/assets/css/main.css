@@ -1146,3 +1146,98 @@ table td {
   padding-right: 0 !important;
   margin-left: 3rem !important;
 }
+
+/* --- GitHub Contributions Card --- */
+.contribution-card {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.contribution-card h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.contribution-graph {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.contribution-graph img {
+  width: 100%;
+  max-width: 730px;
+}
+
+.graph-caption {
+  font-size: 0.9rem;
+  color: var(--text-secondary-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* --- Styled Horizontal Line with Icon --- */
+.styled-hr {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+/* Target the SVG icon inside the styled horizontal rule */
+/* Style the link containing the SVG */
+.styled-hr a {
+  line-height: 0; /* Aligns the icon properly */
+  color: #cccccc; /* Sets the icon's default color */
+  transition: color 0.3s;
+}
+
+.styled-hr a:hover {
+  color: var(--accent-color); /* Use your theme's accent color on hover */
+}
+
+/* Style the inlined SVG itself */
+.styled-hr a svg {
+  width: 28px; /* Control the size */
+  height: 28px;
+  fill: currentColor; /* Makes the SVG inherit the link's color */
+}
+
+/* This creates the line on the left side */
+.styled-hr::before {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #e0e0e0; /* Hardcoded color to fix visibility */
+  margin-right: 1rem;
+}
+
+/* This creates the line on the right side */
+.styled-hr::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #e0e0e0; /* Hardcoded color to fix visibility */
+  margin-left: 1rem;
+}
+
+/* Style the new link and the icon inside it */
+.styled-hr a {
+  line-height: 0; /* Aligns the icon properly */
+  color: #cccccc; /* Sets the icon color */
+  transition: color 0.3s;
+}
+
+.styled-hr a:hover {
+  color: var(--accent-color); /* Use your theme's accent color on hover */
+}
