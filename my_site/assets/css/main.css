@@ -1067,6 +1067,7 @@ table td {
 }
 
 /* Main container for the talks page */
+/* Main container for the talks page */
 .talks-container {
   max-width: 900px;
   margin: 2rem auto;
@@ -1078,73 +1079,51 @@ table td {
   margin-bottom: 3rem;
 }
 
-/* The main timeline container */
-/* The main timeline container */
-.timeline {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 0;
-  
-  /* --- THIS IS THE FIX --- */
-  /* This forces the container to wrap its children, giving it height. */
-  overflow: hidden; 
+/* In main.css */
+
+/* Main container for the talks page */
+
+
+/* Main container for the talks page */
+.talks-container {
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
-/* The central vertical line */
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 3px;
-  background-color: var(--border-color);
+.talks-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* --- The New, Simple Timeline --- */
+
+/* This is a simple container with a left border acting as the line */
+.timeline-list {
+  border-left: 3px solid var(--border-color);
+  padding: 1rem 0;
 }
 
 /* A single talk/event on the timeline */
 .timeline-item {
   position: relative;
-  width: 50%;
+  /* Push the item away from the line */
+  margin-left: 3rem; 
   margin-bottom: 3rem;
-  box-sizing: border-box;
 }
 
-/* The circular marker on the timeline */
-.timeline-item::before {
-  content: '';
+/* The circular marker, positioned over the line */
+.timeline-marker {
   position: absolute;
   top: 10px;
+  /* Pull the marker left to sit on the line */
+  left: -3rem; 
+  transform: translateX(-50%);
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: white;
   border: 3px solid var(--accent-color);
   z-index: 1;
-}
-
-/* --- Alternating Left/Right Layout --- */
-/* ODD items are on the LEFT */
-.timeline-item:nth-child(odd) {
-  float: left; /* Use float for stable positioning */
-  padding-right: 3rem;
-  text-align: right;
-  clear: both; /* Ensure items don't stack horizontally */
-}
-.timeline-item:nth-child(odd)::before {
-  right: -9px;
-}
-
-/* EVEN items are on the RIGHT */
-.timeline-item:nth-child(even) {
-  float: right; /* Use float for stable positioning */
-  padding-left: 3rem;
-  clear: both; /* Ensure items don't stack horizontally */
-}
-.timeline-item:nth-child(even)::before {
-  left: -9px;
 }
 
 /* The content card for each talk */
@@ -1156,9 +1135,7 @@ table td {
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* (The rest of your .timeline-date, h3, etc. styles remain the same) */
-/* (The rest of your .timeline-date, h3, .timeline-event, and .timeline-links styles remain the same) */
-
+/* Your existing styles for date, h3, etc. will work here */
 .timeline-date {
   font-weight: bold;
   color: var(--accent-color);
@@ -1200,3 +1177,4 @@ table td {
   color: white;
   text-decoration: none;
 }
+
