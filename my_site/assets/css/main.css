@@ -6,8 +6,10 @@
   --light-secondary-color: #dddddd;
   --light-tertiary-color: #272822;
   --light-text-color: black;
-}
 
+  /* --- ADD THIS LINE --- */
+  --accent-color: #0056B3; /* Your professional dark blue */
+}
 @font-face {
   font-family: Lato;
   font-weight: 400;
@@ -20,6 +22,104 @@
   src: url("/fonts/Lato-Bold.ttf");
 }
 
+/* Grid container for the posters */
+.poster-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Space between posters */
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* The main container for each poster */
+.poster-box {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* --- KEY CHANGE --- */
+  /* Remove the fixed width */
+  /* flex-basis: 300px; */ 
+
+  /* Set the width to ~50% to create a 2-column layout */
+  flex: 0 1 48%;
+}
+
+.poster-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* The poster thumbnail image */
+.poster-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.poster-box:hover .poster-thumb {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* The overlay that appears on hover */
+.poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  
+  /* Center the text inside */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Position text at the bottom */
+}
+
+.poster-box:hover .poster-overlay {
+  opacity: 1; /* Show on hover */
+}
+
+/* Text container within the overlay */
+.overlay-text {
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  transform: translateY(10px); /* Start slightly lower */
+  transition: transform 0.3s ease;
+}
+
+.poster-box:hover .overlay-text {
+  transform: translateY(0); /* Move up into place on hover */
+}
+
+.overlay-text span {
+  display: block;
+}
+
+.conference-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.conference-location {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.enlarge-prompt {
+  font-size: 0.9rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
 /* --- Grid and Card Layout --- */
 .projects-grid {
   display: flex;
@@ -32,7 +132,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%; /* Two-column layout */
+  flex-basis: 40%; /* Two-column layout */
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -166,7 +266,115 @@
   }
 }
 
+/* Main container for the vignettes page */
+/* Main container for the vignettes page */
+.vignette-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
 
+.vignette-header {
+  text-align: center;
+  margin-bottom: 2.5rem; /* Reduced from 3rem */
+  border-bottom: 1px solid var(--light-secondary-color);
+  padding-bottom: 1rem; /* Reduced from 1.5rem */
+}
+
+.vignette-header h1 {
+  font-size: 2rem; /* Reduced from 2.5rem */
+  margin-bottom: 0.25rem; /* Reduced from 0.5rem */
+  color: var(--light-text-color);
+}
+
+.vignette-header p {
+  font-size: 1rem; /* Reduced from 1.1rem */
+  color: var(--light-text-secondary);
+}
+
+/* The list that holds all the vignette items */
+.vignette-list {
+  /* No counter needed anymore */
+}
+
+/* A single vignette item */
+.vignette-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem; /* Reduced gap for a tighter look */
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+/* --- KEY CHANGE: From Number to Bullet Point --- */
+.vignette-item::before {
+  /* Use a bullet character for the content */
+  content: "•";
+  
+  /* Style it like a traditional bullet point */
+  font-size: 1.5rem;
+  line-height: 1.5; /* Align with the title's first line */
+  color: var(--accent-color);
+}
+
+/* The text content of the vignette */
+/* A single vignette item */
+.vignette-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  position: relative;
+  /* REMOVED: gap is no longer needed */
+}
+
+/* The ::before pseudo-element that created the bullet is now completely removed */
+
+/* The text content of the vignette */
+.vignette-content {
+  padding-top: 0;
+}
+
+.vignette-content h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.vignette-content h2 a {
+  text-decoration: none;
+  /* Change the title color to your site's accent color */
+  color: var(--accent-color);
+  transition: text-decoration 0.3s;
+}
+
+.vignette-content h2 a:hover {
+  /* Change the hover effect to an underline */
+  text-decoration: underline;
+}
+
+/* The paragraph and CTA styles remain the same */
+.vignette-content p {
+  color: var(--light-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.vignette-cta {
+  display: inline-block;
+  background-color: var(--light-secondary-color);
+  color: var(--light-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.vignette-cta:hover {
+  background-color: var(--accent-color);
+  color: rgb(var(--light-primary-color));
+}
 /* ==============================
    HOMEPAGE: NAME + DESCRIPTION
    ============================== */
@@ -205,12 +413,13 @@
    LINKS
    ============================== */
 .markdown-content a {
-  color: #0056B3;          /* professional dark blue */
+  color: var(--accent-color); /* Now uses the variable */
   text-decoration: none;
+  font-weight: bold;
 }
 
 .markdown-content a:hover {
-  color: #66E5FF;          /* theme accent color on hover */
+  # color: #66E5FF;          /* theme accent color on hover */
   text-decoration: underline;
 }
 

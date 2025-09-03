@@ -48,13 +48,6 @@ enableRobotsTXT = true
     .centered-text p {
       margin-bottom: 1rem;
     }
-
-    .centered-text a {
-      color: #0077cc;
-    }
-    .centered-text a:hover {
-      color: #005599;
-    }
   </style>
   """
   metaKeywords = ["biostatistics", "wearables", "wearable devices", "accelerometry"]

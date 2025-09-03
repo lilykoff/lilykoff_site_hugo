@@ -63,21 +63,21 @@ a:hover {
 }
 
 /* === Project Cards === */
+
+/* In dark.css */
 .project-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%; /* Two-column layout */
   background-color: var(--dark-secondary-color) !important;
   color: var(--dark-text-color) !important;
-  border: 1px solid var(--dark-tertiary-color);
+  # border: 1px solid var(--dark-tertiary-color);
   padding: 1rem;
-  max-width: 320px;
   border-radius: 10px;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   transition: background-color 0.3s, box-shadow 0.2s, transform 0.2s;
 }
-
-
 /* Force all nested text inside cards to dark-text-color */
 .project-card *,
 .project-card h2,
@@ -192,16 +192,6 @@ a:hover {
 }
 
 /* Card images */
-.project-card img {
-  width: 300px;       /* fixed width */
-  height: 200px;      /* fixed height */
-  object-fit: contain;  
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  background-color: rgb(var(--dark-primary-color));
-  padding: 5px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
 
 /* Hover lift effect */
 .project-card:hover {
@@ -270,4 +260,14 @@ blockquote {
 /* Optional: smooth transitions for theme changes */
 * {
   transition: background-color 0.3s, color 0.3s, fill 0.3s;
+}
+/* In dark.css */
+
+/* === Vignettes Page Header === */
+.vignette-header h1 {
+  color: var(--text-color);
+}
+
+.vignette-header p {
+  color: var(--text-secondary-color);
 }
