@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Teaching</title>
+      <link>http://lilykoff.com/projects/project-4/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/projects/project-4/</guid>
+      <description>- name: &amp;ldquo;Cardiac Output Analysis&amp;rdquo; # url: &amp;quot;https://pubmed.ncbi.nlm.nih.gov/39207928/&amp;quot; </description>
+    </item>
+    
+    <item>
       <title>Walking fingerprinting</title>
       <link>http://lilykoff.com/projects/project-1/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
@@ -44,20 +53,137 @@
     </item>
     
     <item>
+      <title>Walking Fingerprinting Using Functional Data Analysis</title>
+      <link>http://lilykoff.com/resources/emory/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/emory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking Fingerprinting Using Functional Data Analysis</title>
+      <link>http://lilykoff.com/talks/emory/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/emory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking Fingerprinting in a Large Epidemiological Study</title>
+      <link>http://lilykoff.com/resources/nc_state/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/nc_state/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking Fingerprinting in a Large Epidemiological Study</title>
+      <link>http://lilykoff.com/talks/nc_state/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/nc_state/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical Methods for Female Health</title>
+      <link>http://lilykoff.com/resources/enar/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/enar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical Methods for Female Health</title>
+      <link>http://lilykoff.com/talks/enar/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/enar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NHANES Accelerometry and Derivatives</title>
+      <link>http://lilykoff.com/resources/birs/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/birs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NHANES Accelerometry and Derivatives</title>
+      <link>http://lilykoff.com/talks/birs/</link>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/birs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking fingerprinting</title>
+      <link>http://lilykoff.com/resources/enar2024/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/enar2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walking fingerprinting</title>
+      <link>http://lilykoff.com/talks/enar2024/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/enar2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Application of Open-Source Step Counting Algorithms on Publicly-Available Data</title>
+      <link>http://lilykoff.com/resources/preenar/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/preenar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Application of Open-Source Step Counting Algorithms on Publicly-Available Data</title>
+      <link>http://lilykoff.com/talks/preenar/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/preenar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A nonrandom sample of medical statistics</title>
+      <link>http://lilykoff.com/resources/medstar/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/medstar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A nonrandom sample of medical statistics</title>
+      <link>http://lilykoff.com/talks/medstar/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/medstar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pubs</title>
       <link>http://lilykoff.com/pubs/</link>
       <pubDate>Wed, 27 Dec 2023 14:13:06 -0500</pubDate>
       
       <guid>http://lilykoff.com/pubs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>http://lilykoff.com/talks/</link>
-      <pubDate>Wed, 27 Dec 2023 14:13:06 -0500</pubDate>
-      
-      <guid>http://lilykoff.com/talks/</guid>
       <description></description>
     </item>
     
@@ -85,6 +211,15 @@
       <pubDate>Wed, 27 Dec 2023 14:10:04 -0500</pubDate>
       
       <guid>http://lilykoff.com/vign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://lilykoff.com/resources/nh_vign/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/resources/nh_vign/</guid>
       <description></description>
     </item>
     

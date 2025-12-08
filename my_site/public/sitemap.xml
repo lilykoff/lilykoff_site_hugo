@@ -17,8 +17,41 @@
     <loc>http://lilykoff.com/projects/</loc>
     <lastmod>2025-09-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://lilykoff.com/projects/project-4/</loc>
+    <lastmod>2025-09-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://lilykoff.com/projects/project-1/</loc>
     <lastmod>2025-09-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/emory/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/emory/</loc>
+    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/nc_state/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/nc_state/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/enar/</loc>
+    <lastmod>2025-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/enar/</loc>
+    <lastmod>2025-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/birs/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/birs/</loc>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://lilykoff.com/posts/</loc>
     <lastmod>2024-04-11T17:55:28+08:00</lastmod>
@@ -29,10 +62,25 @@
     <loc>http://lilykoff.com/tags/wearables/</loc>
     <lastmod>2024-04-11T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>http://lilykoff.com/pubs/</loc>
-    <lastmod>2023-12-27T14:13:06-05:00</lastmod>
+    <loc>http://lilykoff.com/resources/enar2024/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://lilykoff.com/talks/</loc>
+    <loc>http://lilykoff.com/talks/enar2024/</loc>
+    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/preenar/</loc>
+    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/preenar/</loc>
+    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/medstar/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/talks/medstar/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/pubs/</loc>
     <lastmod>2023-12-27T14:13:06-05:00</lastmod>
   </url><url>
     <loc>http://lilykoff.com/about/</loc>
@@ -43,6 +91,8 @@
   </url><url>
     <loc>http://lilykoff.com/vign/</loc>
     <lastmod>2023-12-27T14:10:04-05:00</lastmod>
+  </url><url>
+    <loc>http://lilykoff.com/resources/nh_vign/</loc>
   </url><url>
     <loc>http://lilykoff.com/categories/</loc>
   </url>
