@@ -92,10 +92,16 @@ enableRobotsTXT = true
     weight = 4
   
   [[menu.main]]
+    name = "Teaching"
+    pre = "<span data-feather='book-open'></span>"
+    url = "/teaching/"
+    weight = 5
+
+  [[menu.main]]
     name = "Talks"
     pre = "<span data-feather='message-circle'></span>"
     url = "/talks/"
-    weight = 5
+    weight = 6
 
   [[menu.main]]
     name = "CV"
