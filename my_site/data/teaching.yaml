@@ -1,0 +1,28 @@
+courses:
+  - title: "Statistical Methods in Public Health"
+    role: "Lead Teaching Assistant"
+    term: "Spring 2023; 2023-2024; 2025-2026"
+    links:
+      - label: "Term 1"
+        url: "https://publichealth.jhu.edu/course/42103"
+      - label: "Term 2"
+        url: "https://publichealth.jhu.edu/course/42522"
+      - label: "Term 3"
+        url: "https://publichealth.jhu.edu/course/42958"
+    description: "Led TA team, taught lab sessions, held office hours, beta tested quizzes, exams, and new curricula"
+
+  - title: "Statistical Methods in Public Health"
+    role: "Teaching Assistant"
+    term: "Term 1 2022; Term 4 2023"
+    links:
+      - label: "Term 4"
+        url: "https://publichealth.jhu.edu/course/43644"
+    description: "Held office hours and graded assignments."
+
+  - title: "Introduction to R for Public Health Researchers"
+    role: "Teaching Assistant"
+    term: "January 2025"
+    links: 
+      - label: "Course Page"
+        url: "https://publichealth.jhu.edu/course/44421"
+    description: "Held office hours, graded assignments, and attended lectures."

@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="teaching-container">
+  <div class="vignette-header">
+    <h1>Teaching</h1>
+    <p>A record of courses I have taught and instructional materials I have developed.</p>
+  </div>
+
+      <!-- Add demo card -->
+    <div class="teaching-card">
+      <h2>Interactive CLT Demonstration</h2>
+      <p class="teaching-description">
+        A teaching demo illustrating the Central Limit Theorem with interactive sampling
+      </p>
+      <div class="teaching-links">
+        <a href="https://lilykoff.github.io/clt/clt_pres.html" target="_blank">
+          <i data-feather="monitor"></i> View Demo
+        </a>
+      </div>
+    </div>
+
+  <div class="teaching-grid">
+
+    {{ range .Site.Data.teaching.courses }}
+    <div class="teaching-card">
+      <h2>{{ .title }}</h2>
+      <p class="teaching-role">{{ .role }}</p>
+      <p class="teaching-term">{{ .term }}</p>
+
+      {{ if .description }}
+      <p class="teaching-description">{{ .description }}</p>
+      {{ end }}
+
+{{ if .links }}
+  <div class="course-links">
+
+    {{ $num := len .links }}
+
+    <span>More info:</span>
+
+    {{ if eq $num 1 }}
+      <!-- Single link -->
+      <a href="{{ (index .links 0).url }}" target="_blank">
+        {{ (index .links 0).label }}
+      </a>
+
+    {{ else }}
+      <!-- Multiple links in one line -->
+      {{ range $i, $l := .links }}
+        <a href="{{ $l.url }}" target="_blank">{{ $l.label }}</a>{{ if lt (add $i 1) $num }} · {{ end }}
+      {{ end }}
+
+    {{ end }}
+
+  </div>
+{{ end }}
+
+    </div>
+    {{ end }}
+
+
+
+  </div>
+</div>
+{{ end }}
