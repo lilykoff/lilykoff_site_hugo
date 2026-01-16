@@ -1,4 +1,13 @@
 {{ define "main" }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7JFP7FLKW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H7JFP7FLKW');
+</script>
 <section class="projects-section">
   <div class="projects-grid">
     {{ $projects := where .Site.Pages "Section" "projects" }}
