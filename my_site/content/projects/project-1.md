@@ -25,4 +25,11 @@ carousel:
         url: "https://www.sciencedirect.com/science/article/pii/S0966636223001169"
       - name: "GitHub"
         url: "https://github.com/lilykoff/walking_fingerprint_IU"
+  - src: "/images/projects/3d.png"
+    links:
+      - name: "PhD Thesis Defense"
+        url: "tinyurl.com/koff-thesis"
+      - name: "Written Thesis"
+        url: "https://github.com/lilykoff/Johns-Hopkins-University-Unofficial-Thesis-Lily"
+  
 ---

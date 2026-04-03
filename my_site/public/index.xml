@@ -6,7 +6,7 @@
     <description>Recent content in Home on Lily Koffman, MS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://lilykoff.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://lilykoff.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NHANES Weartime Vignette</title>
       <link>http://lilykoff.com/posts/nhanes_wt/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://lilykoff.com/posts/nhanes_wt/</guid>
       <description>NHANES 2011-2014 Weartime Vignette Table of contents Background Weartime in NHANES 2011-2014 Distributions of wake, sleep, nonwear, unkown Wake, sleep, unknown &amp;gt;22 Hours of Sleep &amp;gt;22 Hours of Wake Large amounts of unknown Patterns of wake, sleep wear by age Final criteria NHANES 2011-2014 Weartime Vignette CodeShow All CodeHide All CodeView Source Background When analyzing accelerometry data collected in free living settings, weartime estimation is a crucial first step. If an individual isn’t actually wearing her device, we don’t want to estimate her physical activity as zero!</description>
+    </item>
+    
+    <item>
+      <title>Walking Fingerprinting Using Wrist Accelerometry during Activities of Daily Living in NHANES</title>
+      <link>http://lilykoff.com/talks/enar2025/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://lilykoff.com/talks/enar2025/</guid>
+      <description></description>
     </item>
     
     <item>
