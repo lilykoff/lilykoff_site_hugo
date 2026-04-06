@@ -1,7 +1,7 @@
 # netlify.toml
 [build]
   base = "my_site"
-  publish = "my_site/public"
+  publish = "public"
   command = "hugo"
 
 [build.environment]
