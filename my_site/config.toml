@@ -22,7 +22,7 @@ enableRobotsTXT = true
   avatarSize = "size-xl"
 
   # Description to display on homepage
-  description = "Biostatistician & data scientist"
+  description = "Biostatistician & data scientist<br>Assistant Professor in the University of Virginia <a href='https://datascience.virginia.edu/'>School of Data Science</a>"
 
   # Accent color is displayed when you hover over <a> tags
   accentColor = "#66E5FF"
