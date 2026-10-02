@@ -3,7 +3,7 @@ defaultContentLanguage = "en"
 languageCode = "en"
 
 
-title = "Lily Koffman, PhD"
+title = "Lily Koffman"
 theme = "gokarna"
 
 [contentFormats]
@@ -18,8 +18,8 @@ theme = "gokarna"
 # Automatically generate robots.txt
 enableRobotsTXT = true
 [params]
-  avatarURL = "/images/headshot_new.jpeg"
-  avatarSize = "size-xl"
+  # avatarURL = "/images/headshot_new.jpeg"
+  # avatarSize = "size-xl"
 
   # Description to display on homepage
   description = "Biostatistician & data scientist<br>Assistant Professor in the University of Virginia <a href='https://datascience.virginia.edu/'>School of Data Science</a>"
