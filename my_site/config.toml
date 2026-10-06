@@ -89,25 +89,31 @@ enableRobotsTXT = true
     name = "Posters"
     pre = "<span data-feather='image'></span>"
     url = "/posters/"
-    weight = 4
+    weight = 5
   
   [[menu.main]]
     name = "Teaching"
     pre = "<span data-feather='book-open'></span>"
     url = "/teaching/"
-    weight = 5
+    weight = 6
+
+  [[menu.main]]
+    name = "HD³ Lab"
+    pre = "<span data-feather='message-circle'></span>"
+    url = "/hd3/"
+    weight = 3
 
   [[menu.main]]
     name = "Talks"
     pre = "<span data-feather='message-circle'></span>"
     url = "/talks/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "CV"
     pre = "<span data-feather='external-link'></span>"
     url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
-    weight = 3
+    weight = 4
 
 # [[menu.main]]
 #    name = "Vignettes"
