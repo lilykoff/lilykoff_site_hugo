@@ -99,7 +99,7 @@ enableRobotsTXT = true
 
   [[menu.main]]
     name = "HD³ Lab"
-    pre = "<span data-feather='message-circle'></span>"
+    pre = "<span data-feather='database'></span>"
     url = "/hd3/"
     weight = 3
 
