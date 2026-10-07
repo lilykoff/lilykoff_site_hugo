@@ -1,13 +1,22 @@
 {{ define "main" }}
 <div class="vignette-header">
-    <h1>HD³ Lab</h1>
+    <h1 class="lab-logo">
+        <picture>
+            <!-- Swaps to the white-text version when the visitor's device is in dark mode.
+                 Delete this <source> line if your site doesn't have a dark theme. -->
+            <source srcset="{{ "images/lab/hd3-logo-dark.svg" | relURL }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ "images/lab/hd3-logo.svg" | relURL }}"
+                 alt="HD³ Data Lab: High-Dimensional, High-Density, High-Definition"
+                 width="1100" height="320">
+        </picture>
+    </h1>
 </div>
 
 <section class="lab-section">
     <div class="lab-about">
         <h2>About</h2>
         <p>
-            The <strong>H</strong>igh-<strong>D</strong>imensional, <strong>H</strong>igh-<strong>D</strong>ensity, and <strong>H</strong>igh-<strong>D</strong>efinition (<strong>HD³</strong>) Lab develops statistical methods for complex data. Data sources include wearable sensors (e.g., accelerometers, continuous glucose monitors, smartphones) and clinical monitoring systems (e.g., arterial lines, pulse oximeters, electrocardiograms). Applications span public health and medicine, including characterization of population-level physical activity, perioperative individualized risk prediction, and gait assessment.
+            The <strong>H</strong>igh-<strong>D</strong>imensional, <strong>H</strong>igh-<strong>D</strong>ensity, and <strong>H</strong>igh-<strong>D</strong>efinition (<strong>HD³</strong>) Data Lab develops statistical methods for complex data. Data sources include wearable sensors (e.g., accelerometers, continuous glucose monitors, smartphones) and clinical monitoring systems (e.g., arterial lines, pulse oximeters, electrocardiograms). Applications span public health and medicine, including characterization of population-level physical activity, perioperative individualized risk prediction, and gait assessment.
         </p>
     </div>
 
@@ -18,6 +27,7 @@
         </p>
         <p>
             If you're interested in joining the HD³ Lab, please reach out to <a href="mailto:koffman@virginia.edu">Lily Koffman</a>.
+        </p>
     </div>
 </section>
 {{ end }}

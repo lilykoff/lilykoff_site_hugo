@@ -1314,3 +1314,10 @@ table td {
 .course-links a {
   text-decoration: underline;
 }
+.lab-logo { margin: 0; }
+.lab-logo img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}
