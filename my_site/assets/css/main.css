@@ -1323,10 +1323,10 @@ table td {
   height: auto;
 }
 
-.hd3-nav-mark {
-      height: 5em;
-      width: 2.5em;
-      vertical-align: -0.08em;
+svg.hd3-nav-mark {
+      height: 2.1em !important;
+      width: 2.2em !important;
+      vertical-align: -0.18em;
       margin-right: 0.35em;
 }
 .visually-hidden {
