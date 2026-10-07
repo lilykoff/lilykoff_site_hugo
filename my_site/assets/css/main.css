@@ -1321,3 +1321,13 @@ table td {
   max-width: 520px;
   height: auto;
 }
+
+.lab-logo .logo-dark { display: none; }
+
+html.dark .lab-logo .logo-light,
+body.dark .lab-logo .logo-light,
+[data-theme="dark"] .lab-logo .logo-light { display: none; }
+
+html.dark .lab-logo .logo-dark,
+body.dark .lab-logo .logo-dark,
+[data-theme="dark"] .lab-logo .logo-dark { display: block; }

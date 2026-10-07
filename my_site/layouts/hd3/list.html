@@ -1,14 +1,11 @@
 {{ define "main" }}
 <div class="vignette-header">
     <h1 class="lab-logo">
-        <picture>
-            <!-- Swaps to the white-text version when the visitor's device is in dark mode.
-                 Delete this <source> line if your site doesn't have a dark theme. -->
-            <source srcset="{{ "images/lab/hd3-logo-dark.svg" | relURL }}" media="(prefers-color-scheme: dark)">
-            <img src="{{ "images/lab/hd3-logo.svg" | relURL }}"
-                 alt="HD³ Data Lab: High-Dimensional, High-Density, High-Definition"
-                 width="1100" height="320">
-        </picture>
+    <img class="logo-light" src="{{ "images/lab/hd3-logo.svg" | relURL }}"
+         alt="HD³ Data Lab: High-Dimensional, High-Density, High-Definition"
+         width="1100" height="320">
+    <img class="logo-dark" src="{{ "images/lab/hd3-logo-dark.svg" | relURL }}"
+         alt="" aria-hidden="true" width="1100" height="320">
     </h1>
 </div>
 
