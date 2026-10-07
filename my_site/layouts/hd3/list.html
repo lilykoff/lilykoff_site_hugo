@@ -1,11 +1,7 @@
 {{ define "main" }}
 <div class="vignette-header">
     <h1 class="lab-logo">
-    <img class="logo-light" src="{{ "images/lab/hd3-logo.svg" | relURL }}"
-         alt="HD³ Data Lab: High-Dimensional, High-Density, High-Definition"
-         width="1100" height="320">
-    <img class="logo-dark" src="{{ "images/lab/hd3-logo-dark.svg" | relURL }}"
-         alt="" aria-hidden="true" width="1100" height="320">
+    {{ readFile "static/images/lab/hd3-logo-adaptive.svg" | safeHTML }}
     </h1>
 </div>
 
