@@ -115,7 +115,7 @@ enableRobotsTXT = true
   [[menu.main]]
     name = "CV"
     pre = "<span data-feather='external-link'></span>"
-    url = "https://drive.google.com/file/d/12QjtykIoNc7HK2HqRfenqapMBEQo3U3k/view?usp=sharing"
+    url = "https://lilykoff.github.io/cv_lk/"
     weight = 4
 
 # [[menu.main]]
