@@ -97,9 +97,12 @@ enableRobotsTXT = true
     url = "/teaching/"
     weight = 6
 
+    # name = "HD³ Lab"
+   # pre = "<span data-feather='database'></span>"
+    
   [[menu.main]]
-    name = "HD³ Lab"
-    pre = "<span data-feather='database'></span>"
+    name = "Lab"
+    pre = '''<svg class="hd3-nav-mark" viewBox="0 0 240 120" fill="none" aria-hidden="true"><path d="M7 0V120M73 0V120M107 0V120M100 7H130A53 53 0 0 1 130 113H100" stroke="currentColor" stroke-width="14"/><path d="M7 60H27L35 34L45 86L53 60H73" stroke="#E57200" stroke-width="9" stroke-linejoin="round"/><path d="M207 6H233L220 22A14 14 0 1 1 207 44" stroke="currentColor" stroke-width="8"/></svg><span class="visually-hidden">HD³ </span>'''
     url = "/hd3/"
     weight = 3
 
