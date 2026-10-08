@@ -58,7 +58,7 @@ enableRobotsTXT = true
   socialIcons = [
     {name = "linkedin", url = "https://linkedin.com/in/lily-koffman"},
    #  {name = "github", url = "https://github.com/lilykoff"},
-    {name = "email", url = "mailto:lkoffma2@jh.edu"},
+    {name = "email", url = "mailto:koffman@virginia.edu"},
     {name = "googlescholar", url = "https://scholar.google.com/citations?user=lOh2k5YAAAAJ&hl=en"},
     {name = "orcid", url = "https://orcid.org/0000-0003-1543-2896"},
     {name = "researchgate", url = "https://www.researchgate.net/profile/Lily-Koffman"},
