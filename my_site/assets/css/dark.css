@@ -281,3 +281,8 @@ blockquote {
 }
 
 .lab-logo { color: #FFFFFF; }
+
+.teaching-card {
+  /* Add a subtle border around the content card in dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* A very light, transparent white */
+}
