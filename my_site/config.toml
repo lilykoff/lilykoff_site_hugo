@@ -18,7 +18,7 @@ theme = "gokarna"
 # Automatically generate robots.txt
 enableRobotsTXT = true
 [params]
-  avatarURL = "/images/headshot_new.jpeg"
+  avatarURL = "/images/headshot_v2.jpg"
   avatarSize = "size-xl"
 
   # Description to display on homepage
